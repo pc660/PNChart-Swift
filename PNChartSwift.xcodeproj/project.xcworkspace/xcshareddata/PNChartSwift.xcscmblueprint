@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "54023E5A69A8ACBF4248AE90064E6E1B8A22CC88",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "54023E5A69A8ACBF4248AE90064E6E1B8A22CC88" : 0,
+    "38AC87B110876159154A1FDC522623EBBE8F39F7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ABCFFF51-2D2F-4C54-838D-B8E1E02BC221",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "54023E5A69A8ACBF4248AE90064E6E1B8A22CC88" : "PNChart-Swift\/",
+    "38AC87B110876159154A1FDC522623EBBE8F39F7" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PNChartSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PNChartSwift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pc660\/data_privacy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "38AC87B110876159154A1FDC522623EBBE8F39F7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pc660\/PNChart-Swift",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54023E5A69A8ACBF4248AE90064E6E1B8A22CC88"
+    }
+  ]
+}

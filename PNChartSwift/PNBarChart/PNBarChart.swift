@@ -56,7 +56,7 @@ public class PNBarChart: UIView {
     /*
     yLabelFormatter will format the ylabel text
     */
-    var yLabelFormatter = ({(index: CGFloat) -> NSString in
+    public var yLabelFormatter = ({(index: CGFloat) -> NSString in
         return ""
     })
     
@@ -147,6 +147,8 @@ public class PNBarChart: UIView {
     
     public var delegate:PNChartDelegate!
     
+    public var yAboveLabelFontSize = CGFloat(12.0)
+    public var yAboveLabelHeight = CGFloat(10)
     /**
     * This method will call and stroke the line in animation
     */
@@ -233,6 +235,11 @@ public class PNBarChart: UIView {
                 frame.size.height - chartCavanHeight - xLabelHeight - chartMargin, //Bar Y position
                 barWidth, // Bar witdh
                 chartCavanHeight)) //Bar height
+
+            let yvalueView = UILabel.init(frame: CGRectMake(barXPosition, 0 , barWidth, self.yAboveLabelHeight))
+            yvalueView.text = valueString.stringValue
+            yvalueView.font = yvalueView.font.fontWithSize(self.yAboveLabelFontSize)
+            addSubview(yvalueView)
             
             //Change Bar Radius
             bar.barRadius = barRadius
