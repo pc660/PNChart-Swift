@@ -150,10 +150,10 @@ public class PNBarChart: UIView {
     public var yAboveLabelFontSize = CGFloat(12.0)
     public var yAboveLabelHeight = CGFloat(10)
     /**
-    * This method will call and stroke the line in animation
-    */
-    
-    // MARK: Functions
+     * This method will call and stroke the line in animation
+     */
+     
+     // MARK: Functions
     
     public  func strokeChart() {
         self.viewCleanupForCollection(labels)
@@ -189,7 +189,7 @@ public class PNBarChart: UIView {
             
             for var index:Int = 0; index < yLabelSum; ++index {
                 let labelText:NSString = yLabelFormatter((yValueMax * ( CGFloat(yLabelSum - index) / CGFloat(yLabelSum) ) ))
-                    
+                
                 let label:PNChartLabel = PNChartLabel(frame: CGRectMake(0,yLabelSectionHeight * CGFloat(index) + chartMargin - yLabelHeight/2.0, yChartLabelWidth, yLabelHeight))
                 
                 label.font = labelFont
@@ -235,9 +235,11 @@ public class PNBarChart: UIView {
                 frame.size.height - chartCavanHeight - xLabelHeight - chartMargin, //Bar Y position
                 barWidth, // Bar witdh
                 chartCavanHeight)) //Bar height
-
-            let yvalueView = UILabel.init(frame: CGRectMake(barXPosition, 0 , barWidth, self.yAboveLabelHeight))
+            
+            let yvalueView = UILabel.init(frame: CGRectMake(barXPosition - 20, 0 , barWidth + 40
+                , self.yAboveLabelHeight))
             yvalueView.text = valueString.stringValue
+            yvalueView.textAlignment = .Center
             yvalueView.font = yvalueView.font.fontWithSize(self.yAboveLabelFontSize)
             addSubview(yvalueView)
             
@@ -408,6 +410,6 @@ public class PNBarChart: UIView {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     
 }
